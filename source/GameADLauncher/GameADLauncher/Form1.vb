@@ -5,8 +5,15 @@
         Catch ex As Exception
 
         End Try
+        Try
+            BackgroundImage = System.Drawing.Image.FromFile("DefaultSplash.jpg")
 
-        BackgroundImage = System.Drawing.Image.FromFile("DefaultSplash.jpg")
+
+        Catch ex As Exception
+            MessageBox.Show("默认启动图DefaultSplash.jpg丢失或损坏!", "未找到文件!")
+            End
+        End Try
+
         Try
             BackgroundImage = System.Drawing.Image.FromFile("ADCache.jpg")
 

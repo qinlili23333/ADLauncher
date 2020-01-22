@@ -14,8 +14,9 @@
 #### ADLocation=  
 输入请求广告的`url`,该`url`在浏览器内打开应返回一个广告文件(请参考 README 制作广告文件)  
 琴梨梨提供的测试地址:
-非压缩https://redirect.qinlili.bid/test/AD.jpg
-压缩https://redirect.qinlili.bid/test/AD.7z
+非压缩https://redirect.qinlili.bid/test/AD.jpg  
+压缩无链接https://redirect.qinlili.bid/test/AD.7z  
+压缩有链接https://redirect.qinlili.bid/test/AD.tar.bz2  
 #### archive=  
 广告文件是否压缩,压缩填写`True`,非压缩填写`False`  
 #### curlCommand=  

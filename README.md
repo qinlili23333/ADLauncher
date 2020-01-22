@@ -17,7 +17,6 @@ Launcher.ico为闪屏的图标,如果没有则使用默认.NET图标
 GameADLauncher.exe:闪屏窗口,基于.NET  
 Launch.exe:启动器主程序  
 Launch.cfg:参数文件  
-Timer.exe:延时结束闪屏窗口  
   
 ## 如何制作广告文件  
 将广告图片导出为支持的格式  

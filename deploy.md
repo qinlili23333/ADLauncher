@@ -16,7 +16,7 @@
 琴梨梨提供的测试地址:
 非压缩https://redirect.qinlili.bid/test/AD.jpg  
 压缩无链接https://redirect.qinlili.bid/test/AD.7z  
-压缩有链接https://redirect.qinlili.bid/test/AD.tar.bz2  
+压缩有链接https://redirect.qinlili.bid/test/AD.wim  
 #### archive=  
 广告文件是否压缩,压缩填写`True`,非压缩填写`False`  
 #### curlCommand=  

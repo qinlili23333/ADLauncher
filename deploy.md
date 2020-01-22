@@ -23,10 +23,9 @@
 #### prepareTime=  
 游戏启动预留时间,建议多留一点时间,单位为毫秒(自1.0.2版本开始).超过该时间后闪屏会消失
 ## 5. 拷贝下列文件到游戏目录下,设置游戏启动文件为`Launch.exe`  
-7z.dll  
-7z.exe  
+7za.exe  
 DefaultSplash.jpg  
-Launcher.ico  
+Launcher.ico  (可选)
 GameADLauncher.exe  
 Launch.exe  
 Launch.cfg  

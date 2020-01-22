@@ -12,7 +12,7 @@ Launcher.ico为闪屏的图标,如果没有则使用默认.NET图标
 
   
 ## 文件说明  
-7z.dll,7z.exe:7z库核心文件,用于在接收压缩后广告时解压  
+7za.exe:7z库核心文件,用于在接收压缩后广告时解压,如果你没有使用压缩广告,你可以删掉它  
 GameADLauncher.exe:闪屏窗口,基于.NET  
 Launch.bat(编译后为Launch.exe):启动器主程序  
 Timer.exe:延时结束闪屏窗口  
@@ -23,7 +23,7 @@ Timer.exe:延时结束闪屏窗口
 如开启压缩传输,需把图片命名为ADCache.jpg并压缩这个文件,压缩文件就是广告文件  
 
 # 许可证  
-7z.dll,7z.exe使用7z的许可证,请参考https://www.7-zip.org/license.txt  
+7za.exe使用7z的许可证,请参考https://www.7-zip.org/license.txt  
 本项目其余文件使用WTFPL,想干什么就干什么去吧,只要你别把自己电脑炸了就行  
 琴梨梨不对本项目使用中可能产生的包括但不限于系统蓝绿屏,数据丢失,程序崩溃等任何损失负责  
 

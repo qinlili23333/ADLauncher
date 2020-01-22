@@ -1,4 +1,5 @@
-# ADLauncher by 琴梨梨  
+# ADLauncher by 琴梨梨 
+
 ## 说明  
 该启动器可选择展示默认闪屏或动态拉取广告,且在广告拉取异常时显示默认闪屏  
 DefaultSplash.jpg为默认闪屏,实际支持格式除jpg外也可用png等,但必须修改后缀为jpg  
@@ -14,7 +15,8 @@ Launcher.ico为闪屏的图标,如果没有则使用默认.NET图标
 ## 文件说明  
 7za.exe:7z库核心文件,用于在接收压缩后广告时解压,如果你没有使用压缩广告,你可以删掉它  
 GameADLauncher.exe:闪屏窗口,基于.NET  
-Launch.bat(编译后为Launch.exe):启动器主程序  
+Launch.exe:启动器主程序  
+Launch.cfg:参数文件  
 Timer.exe:延时结束闪屏窗口  
   
 ## 如何制作广告文件  

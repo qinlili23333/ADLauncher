@@ -1,8 +1,8 @@
-﻿Imports Newtonsoft.Json
+﻿Imports LitJson
 
 Public Class Form1
     Private ADJson As String
-    Dim ADJson_result As JSON_result
+    Dim ADCacheJson As JsonData
     Private Declare Function timeGetTime Lib "winmm.dll" () As Long
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -22,7 +22,7 @@ Public Class Form1
         Try
             Me.ADJson = My.Computer.FileSystem.ReadAllText("ADCache.json")
             Me.Cursor = System.Windows.Forms.Cursors.Hand
-            Me.ADJson_result = JsonConvert.DeserializeObject(Of JSON_result)(Me.ADJson)
+            Me.ADCacheJson = LitJson.JsonMapper.ToObject(ADJson)
         Catch ex As Exception
         End Try
     End Sub
@@ -47,15 +47,11 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Click(sender As Object, e As EventArgs) Handles Me.Click
-        If Me.ADJson_result.ADURL IsNot Nothing Then
-            System.Diagnostics.Process.Start(Me.ADJson_result.ADURL)
-            If Me.ADJson_result.clickToExit Like "True" Then
+        If Me.ADCacheJson.Item("ADURL") IsNot Nothing Then
+            System.Diagnostics.Process.Start(Me.ADCacheJson.Item("ADURL"))
+            If Me.ADCacheJson.Item("clickToExit").ToString Like "True" Then
                 End
             End If
         End If
     End Sub
-End Class
-Public Class JSON_result
-    Public ADURL As String
-    Public clickToExit As String
 End Class

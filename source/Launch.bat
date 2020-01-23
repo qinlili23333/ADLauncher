@@ -19,9 +19,9 @@ tasklist|find /i "GameADLauncher.exe" ||goto copyAD
 goto pre
 :copyAD
 del /F /S /Q ADCache.jpg
-del /F /S /Q ADCache.cfg
+del /F /S /Q ADCache.json
 if %archive%==True 7za.exe e AD.ztemp ADCache.jpg
-if %archive%==True 7za.exe e ADCache.cfg ADCache.cfg
+if %archive%==True 7za.exe e AD.ztemp ADCache.json
 if %archive%==False rename AD.temp ADCache.jpg
 del /F /S /Q AD.ztemp
 del /F /S /Q AD.temp

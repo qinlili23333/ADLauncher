@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,12 +44,35 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 419)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(800, 31)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar1.TabIndex = 1
+        Me.ProgressBar1.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.White
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(0, 388)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(800, 31)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "检测到更新!正在下载更新包,下载完成后启动器自动退出"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label1.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(144.0!, 144.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Cursor = System.Windows.Forms.Cursors.AppStarting
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -63,4 +88,6 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
+    Public WithEvents ProgressBar1 As ProgressBar
+    Public WithEvents Label1 As Label
 End Class

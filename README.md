@@ -27,10 +27,12 @@ LitJson.dll:Json核心库
 ### 配置文件  
 配置文件为json格式,请参考下面的样式  
 `
-{
-    "ADURL": "广告地址,支持steam://等任意可以拉起的scheme",
-    "clickToExit": "True或False,True时点击广告后启动器退出,False则点击广告后启动器继续显示等待延时后退出"
-}
+{  
+    "ADURL": "广告地址,支持steam://等任意可以拉起的scheme",  
+    "clickToExit": "True或False,True时点击广告后启动器退出,False则点击广告后启动器继续显示等待延时后退出",  
+    "needUpdate": "True或False,True时会下载更新,False时忽略更新",  
+    "updateURL": "更新下载地址,仅支持http/https/ftp"  
+}  
 `
 # 许可证  
 7za.exe使用7z的许可证,请参考https://www.7-zip.org/license.txt  
